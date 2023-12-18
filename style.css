@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background: url(./banner.jpg);
+    width: 100%;
+    height: 950px;
+    display: flex;
+    align-items: end;
+}
+.main{
+    animation: destraSinistra 5s linear infinite alternate
+
+}
+.shina{
+    display: flex;
+
+}
+.shina1{
+    position: absolute;
+    left: 482px;
+    margin-top: -90px;
+    animation: spin 5s linear;
+}
+.shina2{
+    position: absolute;
+    left: 157px;
+    margin-top: -90px;
+    animation: spin 5s linear;
+}
+@keyframes destraSinistra {
+    0% {
+      margin-left: 0%;
+    }
+    100% {
+      margin-left: 2200px;
+      transform:translateX(-100%);
+    }
+  }
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}  
+
+.oblaca{
+    position: absolute;
+    top: 40px;
+}
+.aushev{
+    top: 320px;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+
+}
